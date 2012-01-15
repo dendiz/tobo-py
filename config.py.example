@@ -1,0 +1,12 @@
+class Config:
+	conf = {
+		'dbuser': 'root',
+		'dbpasswd': '****',
+		'server': 'jabber.org',
+		'user': 'tobo.bot',
+		'password': '****',
+		'logfile' : '/tmp/tobo.log',
+		'welcome_msg': 'welcome to tobo. check out http://tobo.dendiz.com or type help'
+	}
+	def get(self, citem):
+		return self.conf[citem]
